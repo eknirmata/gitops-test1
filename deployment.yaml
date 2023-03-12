@@ -4,12 +4,12 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
+    srv-app: my-nginx
 spec:
   replicas: 2
   selector:
     matchLabels:
       app: nginx
-      srv-app: my-nginx
   template:
     metadata:
       labels:
